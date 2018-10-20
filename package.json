@@ -1,0 +1,24 @@
+{
+  "name": "employeefinder",
+  "version": "1.0.0",
+  "description": "Matching App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozobianwadibia/EmployeeFinder.git"
+  },
+  "author": "Ozobia Nwadibia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozobianwadibia/EmployeeFinder/issues"
+  },
+  "homepage": "https://github.com/ozobianwadibia/EmployeeFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
