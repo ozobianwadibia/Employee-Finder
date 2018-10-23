@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main {
+            width: 80%;
+            height: 400px;
+            background-color: aquamarine;
+            margin: 0 auto;
+            border-radius: 0.8rem;
+            position: relative;
+        }
+        
+        .api {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .header,
+        .other,
+        .api {
+            width: 90%;
+            text-align: left;
+            padding: 0.5rem;
+            margin: 0 auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        
+        .api {
+            margin-top: 6rem;
+        }
+        
+        .api a {
+            margin-top: 2rem;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .other {
+            font-size: 0.95rem;
+        }
+        
+        button {
+            background-color: black;
+            color: white;
+            width: 8rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <h1>Employee Finder</h1>
+            <hr>
+        </header>
+
+        <div class="other">
+            <p>Answer a few basic questions.</p>
+            <p>Then find the employee with the greatest compatibility!
+            </p>
+            <button>Go To Survey</button>
+        </div>
+        <div class="api">
+            <a href="/api/employees">API Employee List</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
