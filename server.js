@@ -10,15 +10,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Sets our server to use the public directory for static assets
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "app/public")));
 
 
-
-require("./app/routing/htmlRoutes")(app);
+require("./app/routing/htmlRoutes.js")(app);
 require("./app/routing/apiRoutes.js")(app);
 
 
-// Starts our server.
+// Starts the server.
 app.listen(PORT, function() {
     console.log("Server is listening on PORT: " + PORT);
 });
