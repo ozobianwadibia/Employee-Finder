@@ -6,59 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .wrapper {
-            width: 80%;
-            height: auto;
-            margin: 0 auto;
-            background-color: #7FFFD4;
-            text-align: left;
-            margin-bottom: 3rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            padding-top: 0.5rem;
-            border-radius: 0.8rem;
-        }
-        
-        input,
-        select {
-            width: 100%;
-            height: 2rem;
-            border: 0.0625rem solid black;
-            border-radius: 0.2rem;
-        }
-        
-        button {
-            width: 100%;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            background-color: black;
-            color: white;
-            height: 3rem;
-        }
-        
-        .api {
-            margin-top: 2rem;
-        }
-        
-        .api a {
-            text-decoration: none;
-            padding-bottom: 1rem;
-            font-weight: bold;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -188,9 +136,28 @@
         <div class="api">
             <a href="/api/employees" target="_blank">API Employee List</a>
         </div>
+
+        <!-- The Modal Begins -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="nameMatch"></p>
+                <br><br>
+                <img id="photoMatch" src="" alt="matching picture">
+            </div>
+        </div>
+        <div id="myAlert" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>One or more values is missing, please try again!</p>
+            </div>
+        </div>
+        <!-- the Modal ends -->
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script type="module" src="../data/employees.js"></script> -->
     <script src="js/survey.js"></script>
 </body>
 
